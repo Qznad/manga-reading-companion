@@ -1,0 +1,46 @@
+main { max-width: 680px; margin: 48px auto 80px; padding: 0 20px; }
+
+.page-header { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 24px; }
+.header-text { min-width: 0; }
+.page-header h1 { font-size: 24px; font-weight: 700; letter-spacing: -0.01em; margin: 2px 0; }
+.page-header a { display: inline-flex; align-items: center; gap: 4px; margin-left: 8px; font-size: 13px; }
+.logo {
+  display: grid; place-items: center; flex-shrink: 0;
+  width: 48px; height: 48px; font-size: 22px;
+  color: var(--accent); background: var(--accent-soft); border-radius: 12px;
+}
+.eyebrow { font-size: 12px; font-weight: 600; color: var(--accent); }
+
+.how-to { padding: 14px 16px; margin-bottom: 20px; font-size: 13px; color: var(--text-2); }
+.how-to b { color: var(--text); font-weight: 600; }
+
+#notice { margin-bottom: 16px; }
+
+/* Songs */
+#song-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.song { padding: 16px 18px 18px; }
+.song-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.song-number { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; }
+.song-number::before {
+  content: attr(data-n);
+  display: grid; place-items: center;
+  width: 24px; height: 24px; font-size: 12px;
+  color: var(--accent); background: var(--accent-soft); border-radius: 7px;
+}
+.song .remove { padding: 6px 10px; font-size: 13px; }
+
+.video-status { display: flex; align-items: center; gap: 6px; min-height: 20px; margin-top: 8px; font-size: 13px; color: var(--text-2); }
+.video-status.ok { color: var(--ok); }
+.video-status.bad { color: var(--bad); }
+.video-status.warn { color: var(--warn); }
+
+.row { display: flex; gap: 12px; align-items: flex-end; margin-top: 14px; flex-wrap: wrap; }
+.row .field { width: 140px; }
+
+.add-song { margin-top: 12px; padding: 13px; border-style: dashed; background: transparent; color: var(--text-2); }
+.add-song:hover { color: var(--text); }
+
+#message { margin-top: 20px; }
+
+.actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 28px; flex-wrap: wrap; }
+.save-hint { text-align: right; margin-top: 10px; }

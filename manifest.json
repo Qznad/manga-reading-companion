@@ -1,0 +1,45 @@
+{
+  "manifest_version": 3,
+  "name": "Manga Reading Companion",
+  "version": "0.1.0",
+  "description": "Plays music synced to the page you're reading on MangaDex.",
+  "author": "Yassine Belhadj",
+  "homepage_url": "https://github.com/Qznad/manga-reading-companion",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "manga-reading-companion@local",
+      "strict_min_version": "128.0"
+    }
+  },
+  "background": {
+    "scripts": [
+      "src/background/background.js"
+    ],
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mangadex.org/*"
+      ],
+      "js": [
+        "src/content/content.js",
+        "src/content/player.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "Manga Reading Companion"
+  },
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://mangadex.org/*",
+    "https://api.mangadex.org/*",
+    "https://www.youtube.com/*"
+  ]
+}

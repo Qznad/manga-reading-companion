@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Playlist Creator — Manga Reading Companion</title>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="creator.css">
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div class="logo"><span data-icon="pencil"></span></div>
+      <div class="header-text">
+        <p class="eyebrow">Playlist creator</p>
+        <h1 id="manga-title">Loading…</h1>
+        <p class="muted">
+          <span id="chapter-label"></span>
+          <a id="open-chapter" target="_blank">Open chapter <span data-icon="external"></span></a>
+        </p>
+      </div>
+    </header>
+
+    <div class="card how-to">
+      Each song starts on the page you choose and <b>repeats until the next song's page</b>.
+      Tip: keep the chapter open in another tab and click <b>Page I'm on</b> to grab the page you're reading.
+    </div>
+
+    <div id="notice" hidden></div>
+
+    <ol id="song-list"></ol>
+    <button id="add-song" class="btn btn-block add-song"><span data-icon="plus"></span> Add a song</button>
+
+    <div id="message" hidden></div>
+
+    <div class="actions">
+      <button id="try-it" class="btn btn-lg"><span data-icon="play"></span> Try it while reading</button>
+      <button id="save-file" class="btn btn-primary btn-lg"><span data-icon="download"></span> Save file</button>
+    </div>
+    <p class="save-hint faint small">
+      Saves to Downloads/<span id="save-path"></span> ·
+      <a href="#" id="save-elsewhere">Save somewhere else…</a>
+    </p>
+  </main>
+
+  <!-- One song. Copied by creator.js for every song in the list. -->
+  <template id="song-template">
+    <li class="card song">
+      <div class="song-header">
+        <span class="song-number"></span>
+        <button class="btn btn-ghost btn-danger remove" type="button"><span data-icon="trash"></span> Remove</button>
+      </div>
+
+      <label class="field">
+        <span>YouTube link</span>
+        <input class="input link" type="text" placeholder="Paste a YouTube link here" spellcheck="false">
+      </label>
+      <p class="video-status"></p>
+
+      <div class="row">
+        <label class="field">
+          <span>Starts on page</span>
+          <input class="input page" type="number" min="1">
+        </label>
+        <button class="btn here" type="button"><span data-icon="pin"></span> Page I'm on</button>
+        <label class="field">
+          <span>Song starts at</span>
+          <input class="input start" type="text" value="0:00" placeholder="0:00">
+        </label>
+      </div>
+    </li>
+  </template>
+
+  <script type="module" src="creator.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Music Library — Manga Reading Companion</title>
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <div class="logo"><span data-icon="music"></span></div>
+      <div>
+        <h1>Music Library</h1>
+        <p class="muted">Music packs add songs to manga chapters. Switch a pack off to stop using it.</p>
+      </div>
+    </header>
+
+    <!-- The real folder picker is hidden; the big button opens it. -->
+    <input id="folder-input" type="file" webkitdirectory hidden>
+    <button id="load-button" class="btn btn-primary btn-lg btn-block">
+      <span data-icon="folder"></span> Load a music pack folder
+    </button>
+
+    <div id="result" hidden></div>
+
+    <div class="section-title">
+      <h2>Your packs</h2>
+      <span id="pack-summary" class="faint small"></span>
+    </div>
+
+    <div id="empty" class="card empty">
+      <span data-icon="music" class="empty-icon"></span>
+      <p><b>No music packs yet</b></p>
+      <p class="muted small">Load a pack folder above, or create a playlist from the extension's popup while reading.</p>
+    </div>
+
+    <ul id="pack-list"></ul>
+  </main>
+
+  <script type="module" src="library.js"></script>
+</body>
+</html>

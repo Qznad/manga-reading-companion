@@ -1,0 +1,36 @@
+body { width: 320px; padding: 14px; display: grid; gap: 10px; }
+
+header { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
+.logo {
+  display: grid; place-items: center;
+  width: 28px; height: 28px; font-size: 15px;
+  color: var(--accent); background: var(--accent-soft); border-radius: 8px;
+}
+.brand { font-weight: 600; font-size: 14px; }
+
+section { display: grid; gap: 10px; }
+.pad { padding: 14px; }
+.center { text-align: center; justify-items: center; }
+.big-icon { font-size: 26px; color: var(--text-3); }
+
+.eyebrow { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--text-3); margin-bottom: 4px; }
+.title { font-size: 15px; font-weight: 600; line-height: 1.35; }
+.clamp { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+
+.progress-row { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.progress { flex: 1; height: 4px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+#progress-bar { height: 100%; width: 0; background: var(--accent); border-radius: 2px; transition: width .25s; }
+
+.music { display: flex; gap: 12px; align-items: flex-start; }
+.music-icon {
+  display: grid; place-items: center; flex-shrink: 0;
+  width: 38px; height: 38px; font-size: 18px; border-radius: 10px;
+  color: var(--accent); background: var(--accent-soft);
+}
+.music.silent .music-icon { color: var(--text-3); background: var(--surface-2); }
+.music.playing .eyebrow { color: var(--accent); }
+.music-text { min-width: 0; }
+#song-details { white-space: pre-line; margin-top: 2px; }
+
+footer { display: flex; align-items: center; justify-content: space-between; }
+footer .btn { padding-left: 8px; }

@@ -1,0 +1,12 @@
+# Built/packaged extension files
+web-ext-artifacts/
+*.zip
+*.xpi
+
+# Tools
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+*~

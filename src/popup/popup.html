@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../shared/theme.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><span data-icon="music"></span></div>
+    <span class="brand">Manga Reading Companion</span>
+  </header>
+
+  <!-- Shown if Firefox hasn't given the extension access to the websites it needs. -->
+  <section id="permission-card" class="card pad" hidden>
+    <p class="title">One-time setup</p>
+    <p class="muted small">Allow the extension to read MangaDex pages, look up chapter names, and show song titles.</p>
+    <button id="grant-permission" class="btn btn-primary btn-block"><span data-icon="check"></span> Allow</button>
+  </section>
+
+  <!-- Shown when you're not reading a chapter. -->
+  <section id="not-reading" class="card pad center" hidden>
+    <span data-icon="book" class="big-icon"></span>
+    <p class="title">Nothing playing</p>
+    <p class="muted small">Open a chapter on MangaDex. Music starts automatically if one of your packs has songs for it.</p>
+  </section>
+
+  <!-- Shown while reading. -->
+  <section id="reading" hidden>
+    <div class="card pad">
+      <p class="eyebrow">Reading</p>
+      <p id="manga-title" class="title"></p>
+      <p id="chapter-label" class="muted small"></p>
+      <div class="progress-row">
+        <div class="progress"><div id="progress-bar"></div></div>
+        <span id="page-label" class="faint small"></span>
+      </div>
+    </div>
+
+    <div id="music-card" class="card pad music">
+      <div id="music-icon" class="music-icon"><span data-icon="music"></span></div>
+      <div class="music-text">
+        <p id="music-label" class="eyebrow"></p>
+        <p id="song-title" class="title clamp"></p>
+        <p id="song-details" class="muted small"></p>
+      </div>
+    </div>
+
+    <button id="open-creator" class="btn btn-block"><span data-icon="pencil"></span> <span id="creator-label"></span></button>
+  </section>
+
+  <footer>
+    <button id="open-library" class="btn btn-ghost"><span data-icon="folder"></span> Music Library</button>
+    <span id="pack-count" class="faint small"></span>
+  </footer>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
