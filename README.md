@@ -13,6 +13,7 @@ Fans have long paired manga with music by hand, like reading *Berserk* with Susu
 ## Features
 
 - **Page-synced music:** each song starts on a chosen page and plays until the next song's page.
+- **Works with webtoons:** supports Long Strip chapters too. The page is tracked as you scroll.
 - **Seamless looping:** slow reader? A song repeats from its chosen start time until you reach the next scene, so there's never silence.
 - **Music packs:** music comes in packs, simple folders you download and load in one click. Works for **any manga on MangaDex**.
 - **Playlist creator:** make your own soundtrack for any chapter without writing code:
@@ -109,7 +110,6 @@ You don't need to write these by hand. The playlist creator makes them for you. 
 
 - **One click to start:** Firefox blocks sound until you interact with the player, so you click play once per chapter.
 - **Some videos can't be embedded:** their owners block playing them outside YouTube. The creator warns you, so you can pick another upload.
-- **Long Strip mode:** in Long Strip reading mode, the page number can lag slightly behind your scrolling.
 - **Firefox only**, for now.
 
 ---

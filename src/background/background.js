@@ -59,6 +59,7 @@ async function onPageChanged({ chapterId, page, tabId }) {
   const cueIndex = cue ? music.cues.indexOf(cue) : -1;
   await browser.storage.session.set({
     reader: {
+      tabId,
       chapterId,
       page,
       chapter, // manga name, chapter number, title, page count — or null if MangaDex is unreachable
@@ -89,11 +90,26 @@ browser.runtime.onMessage.addListener((msg, sender) => {
       onPageChanged({ chapterId: msg.chapterId, page: msg.page, tabId: sender.tab?.id });
       return;
     case "readerLeft":
-      console.log("[MRC] reader left");
-      latestChange++;
-      current = null;
-      browser.storage.session.set({ reader: null });
       tellPlayer(sender.tab?.id, { type: "stopMusic" });
+      stopReading(sender.tab?.id);
       return;
   }
 });
+
+// content.js keeps a connection open while its page is open. It closes when the tab is closed,
+// reloaded, or goes to another site, which means that tab isn't reading any more.
+browser.runtime.onConnect.addListener((port) => {
+  if (port.name === "reader") port.onDisconnect.addListener(() => stopReading(port.sender.tab?.id));
+});
+
+// Forgets what's being read, but only if `tabId` is the tab we're following
+// (another MangaDex tab closing shouldn't affect the one you're reading in).
+async function stopReading(tabId) {
+  // `current` is forgotten if Firefox put this script to sleep, so also check the saved summary.
+  const { reader } = await browser.storage.session.get("reader");
+  if (current?.tabId !== tabId && reader?.tabId !== tabId) return;
+  console.log("[MRC] reader left");
+  latestChange++;
+  current = null;
+  browser.storage.session.set({ reader: null });
+}
