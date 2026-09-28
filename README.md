@@ -1,4 +1,4 @@
-# 🎵 Manga Reading Companion
+#  Manga Reading Companion
 
 **A soundtrack for your manga.** Manga Reading Companion is a Firefox extension that plays music synced to the page you're reading on [MangaDex](https://mangadex.org). When the story shifts, so does the music.
 
