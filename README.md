@@ -141,14 +141,8 @@ Bug reports and ideas are welcome in [Issues](../../issues).
 
 ---
 
-## Licence
+## License
 
-Copyright © 2026 Yassine Belhadj ([@Qznad](https://github.com/Qznad)).
+[GPL-3.0](LICENSE) © Yassine Belhadj
 
-Manga Reading Companion is free software under the **[GNU General Public License v3.0](LICENSE)**:
-- You can use, study, change and share it.
-- If you share a modified version, it must also be under GPL-3.0, with its source code available and this copyright notice kept.
-
-Icons are adapted from [Lucide](https://lucide.dev) (ISC License).
-
-*Not affiliated with MangaDex or YouTube. All music belongs to its respective owners and is played through YouTube's official embedded player.*
+*Not affiliated with MangaDex or YouTube.*
