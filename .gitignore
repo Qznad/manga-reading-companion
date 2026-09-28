@@ -10,3 +10,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 *~
+
+# Raw screenshots (may show personal browser details; cleaned copies live in docs/screenshots)
+Screenshots/

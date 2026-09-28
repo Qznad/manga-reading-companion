@@ -8,6 +8,10 @@ Fans have long paired manga with music by hand, like reading *Berserk* with Susu
 
 > **Status:** early version. It works, but isn't on the Firefox Add-ons store yet. See [Install](#install).
 
+<p align="center">
+  <img src="docs/screenshots/reading.png" width="820" alt="Reading Berserk with the popup showing the song playing and the player in the corner">
+</p>
+
 ---
 
 ## Features
@@ -51,6 +55,8 @@ The extension isn't on the Firefox Add-ons store yet. Until it is, you can load 
 2. Open a chapter on MangaDex that the pack covers. A small player appears in the corner.
 3. Click play once. Firefox needs one click before a page can play sound. From then on, the music follows your reading.
 
+<p align="center"><img src="docs/screenshots/library.png" width="640" alt="The Music Library with two packs"></p>
+
 ### Making a playlist
 
 1. While reading a chapter, open the popup and click **Create a playlist for this chapter**.
@@ -60,6 +66,8 @@ The extension isn't on the Firefox Add-ons store yet. Until it is, you can load 
    - optionally, set a start time like `1:30`.
 3. Click **Try it while reading** to hear it right away.
 4. Click **Save file** when you're happy. It's saved to `Downloads/Manga Reading Companion/<Manga>/`, and that folder is a ready-to-share pack.
+
+<p align="center"><img src="docs/screenshots/creator.png" width="640" alt="The playlist creator with songs for a Berserk chapter"></p>
 
 Tip: on YouTube, right-click the video and choose **Copy video URL at current time**. The creator reads that time and fills in the start time for you.
 
