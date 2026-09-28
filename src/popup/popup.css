@@ -1,11 +1,7 @@
 body { width: 320px; padding: 14px; display: grid; gap: 10px; }
 
 header { display: flex; align-items: center; gap: 10px; margin-bottom: 2px; }
-.logo {
-  display: grid; place-items: center;
-  width: 28px; height: 28px; font-size: 15px;
-  color: var(--accent); background: var(--accent-soft); border-radius: 8px;
-}
+.logo { width: 28px; height: 28px; }
 .brand { font-weight: 600; font-size: 14px; }
 
 section { display: grid; gap: 10px; }

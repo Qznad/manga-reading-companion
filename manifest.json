@@ -5,6 +5,11 @@
   "description": "Plays music synced to the page you're reading on MangaDex.",
   "author": "Yassine Belhadj",
   "homepage_url": "https://github.com/Qznad/manga-reading-companion",
+  "icons": {
+    "48": "icons/icon.svg",
+    "96": "icons/icon.svg",
+    "128": "icons/icon.svg"
+  },
   "browser_specific_settings": {
     "gecko": {
       "id": "manga-reading-companion@local",
@@ -30,6 +35,7 @@
     }
   ],
   "action": {
+    "default_icon": "icons/icon.svg",
     "default_popup": "src/popup/popup.html",
     "default_title": "Manga Reading Companion"
   },

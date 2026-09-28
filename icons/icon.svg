@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <!-- Manga Reading Companion icon: a manga speech bubble with a music note. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff7a45"/>
+      <stop offset="1" stop-color="#e0352b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Orange rounded square -->
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+  <!-- Speech bubble and its tail -->
+  <ellipse cx="64" cy="58" rx="46" ry="38" fill="#fff"/>
+  <path d="M36 84 24 110 62 92z" fill="#fff"/>
+
+  <!-- Music note (two beamed notes) -->
+  <g fill="#e8452f" transform="translate(64 57) scale(.78) translate(-68 -45)">
+    <path d="M58 66V31l28-7v35" fill="none" stroke="#e8452f" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M58 31l28-7v10l-28 7z"/>
+    <ellipse cx="50" cy="67" rx="10.5" ry="8" transform="rotate(-20 50 67)"/>
+    <ellipse cx="78" cy="60" rx="10.5" ry="8" transform="rotate(-20 78 60)"/>
+  </g>
+</svg>

@@ -1,4 +1,6 @@
-#  Manga Reading Companion
+<p align="center"><img src="icons/icon.svg" width="112" alt="Manga Reading Companion icon"></p>
+
+<h1 align="center">Manga Reading Companion</h1>
 
 **A soundtrack for your manga.** Manga Reading Companion is a Firefox extension that plays music synced to the page you're reading on [MangaDex](https://mangadex.org). When the story shifts, so does the music.
 
@@ -10,18 +12,18 @@ Fans have long paired manga with music by hand, like reading *Berserk* with Susu
 
 ## Features
 
-- ** Page-synced music:** each song starts on a chosen page and plays until the next song's page.
-- ** Seamless looping:** slow reader? A song repeats from its chosen start time until you reach the next scene, so there's never silence.
-- ** Music packs:** music comes in packs, simple folders you download and load in one click. Works for **any manga on MangaDex**.
-- ** Playlist creator:** make your own soundtrack for any chapter without writing code:
+- **Page-synced music:** each song starts on a chosen page and plays until the next song's page.
+- **Seamless looping:** slow reader? A song repeats from its chosen start time until you reach the next scene, so there's never silence.
+- **Music packs:** music comes in packs, simple folders you download and load in one click. Works for **any manga on MangaDex**.
+- **Playlist creator:** make your own soundtrack for any chapter without writing code:
   - paste a YouTube link and see the song's title straight away;
   - pick pages with one click while you read;
   - try it live, then save it as a file to share.
-- ** You're in control:** switch packs on and off, remove chapters, and when two packs cover the same chapter, pick which one plays.
-- ** An unobtrusive player:** a small YouTube player you can drag anywhere. It fades out while you read and shows the song's title.
-- ** Reading at a glance:** the popup shows the manga, chapter, page progress, the song playing and what's coming next.
-- ** Light and dark mode:** follows your system setting.
-- ** Private:** no accounts, no tracking, no servers. See [Privacy](#privacy).
+- **You're in control:** switch packs on and off, remove chapters, and when two packs cover the same chapter, pick which one plays.
+- **An unobtrusive player:** a small YouTube player you can drag anywhere. It fades out while you read and shows the song's title.
+- **Reading at a glance:** the popup shows the manga, chapter, page progress, the song playing and what's coming next.
+- **Light and dark mode:** follows your system setting.
+- **Private:** no accounts, no tracking, no servers. See [Privacy](#privacy).
 
 ---
 
