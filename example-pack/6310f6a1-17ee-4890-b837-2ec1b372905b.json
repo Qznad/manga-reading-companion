@@ -3,7 +3,15 @@
   "manga": "Berserk",
   "chapter": "Vol. 1 Ch. 0.01 — The Black Swordsman",
   "cues": [
-    { "page": 1, "youtubeId": "vZa0Yh6e7dw", "startAt": 0 },
-    { "page": 5, "youtubeId": "70GD2SBCq64", "startAt": 0 }
+    { "page": 8, "youtubeId": "GLg_wp0IXoI", "startAt": 0 },
+    { "page": 12, "youtubeId": "vZa0Yh6e7dw", "startAt": 0 },
+    { "page": 28, "youtubeId": "Ew3--XVFioU", "startAt": 0 },
+    { "page": 36, "youtubeId": "ouARR_kEPVc", "startAt": 0 },
+    { "page": 42, "youtubeId": "5iAViNf9Z4Y", "startAt": 0 },
+    { "page": 57, "youtubeId": "UDgkHB-s82U", "startAt": 0 },
+    { "page": 67, "youtubeId": "CQvmIJz-BaE", "startAt": 0 },
+    { "page": 76, "youtubeId": "OO-QCjpXdfo", "startAt": 0 },
+    { "page": 89, "youtubeId": "CGcv09G5MYc", "startAt": 0 },
+    { "page": 92, "youtubeId": "gV26zIE0130", "startAt": 0 }
   ]
 }
