@@ -39,7 +39,7 @@ The extension isn't on the Firefox Add-ons store yet. Until it is, you can load 
 
 > Temporary add-ons are removed when Firefox closes. You'll need to repeat step 2 after restarting, until the extension is published.
 
-**Requires Firefox 128 or newer.** Chrome isn't supported yet.
+**Requires Firefox 140 or newer.** Chrome isn't supported yet.
 
 ---
 
