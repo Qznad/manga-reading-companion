@@ -2,11 +2,17 @@
 
 <h1 align="center">Manga Reading Companion</h1>
 
+<p align="center">
+  <a href="https://addons.mozilla.org/firefox/addon/manga-reading-companion/"><img src="https://img.shields.io/amo/v/manga-reading-companion?label=Firefox%20Add-ons&logo=firefoxbrowser&color=f25c34" alt="Firefox Add-ons version"></a>
+  <a href="https://addons.mozilla.org/firefox/addon/manga-reading-companion/"><img src="https://img.shields.io/amo/users/manga-reading-companion?color=f25c34" alt="Users"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/Qznad/manga-reading-companion?color=555" alt="License"></a>
+</p>
+
 **A soundtrack for your manga.** Manga Reading Companion is a Firefox extension that plays music synced to the page you're reading on [MangaDex](https://mangadex.org). When the story shifts, so does the music.
 
 Fans have long paired manga with music by hand, like reading *Berserk* with Susumu Hirasawa's soundtrack playing. This extension does it for you. Each song starts on the right page and loops until the scene changes, so you can keep your eyes on the page.
 
-> **Status:** early version. It works, but isn't on the Firefox Add-ons store yet. See [Install](#install).
+<p align="center"><a href="https://addons.mozilla.org/firefox/addon/manga-reading-companion/"><b>➜ Get it on Firefox Add-ons</b></a></p>
 
 <p align="center">
   <img src="docs/screenshots/reading.png" width="820" alt="Reading Berserk with the popup showing the song playing and the player in the corner">
@@ -34,16 +40,18 @@ Fans have long paired manga with music by hand, like reading *Berserk* with Susu
 
 ## Install
 
-The extension isn't on the Firefox Add-ons store yet. Until it is, you can load it from this repository:
-
-1. [Download this repository](../../archive/refs/heads/main.zip) and unzip it, or `git clone` it.
-2. In Firefox, go to `about:debugging` → **This Firefox** → **Load Temporary Add-on…**
-3. Select the `manifest.json` file in the folder.
-4. Click the extension's icon. If it asks for access to MangaDex and YouTube, click **Allow**.
-
-> Temporary add-ons are removed when Firefox closes. You'll need to repeat step 2 after restarting, until the extension is published.
+1. Open **[Manga Reading Companion on Firefox Add-ons](https://addons.mozilla.org/firefox/addon/manga-reading-companion/)** and click **Add to Firefox**.
+2. Click the extension's icon in the toolbar. If it asks for access to MangaDex and YouTube, click **Allow**.
+3. Open the **Music Library** and load a pack. Try the [example pack](example-pack/) to hear it in action.
 
 **Requires Firefox 140 or newer.** Chrome isn't supported yet.
+
+### From source (for developers)
+
+1. [Download this repository](../../archive/refs/heads/main.zip) and unzip it, or `git clone` it.
+2. In Firefox, go to `about:debugging` → **This Firefox** → **Load Temporary Add-on…** and select `manifest.json`.
+
+Temporary add-ons are removed when Firefox closes. Remove the store version first, because both use the same add-on ID.
 
 ---
 
